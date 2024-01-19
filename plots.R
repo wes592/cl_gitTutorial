@@ -1,13 +1,15 @@
 ### Example Plots
 
+multiplier_v <- 2
+
 pdf(file = "~/Documents/GitHub/cl_gitTutorial/data/plot1.pdf")
-plot(1:10)
+plot(1:(10*multiplier_v))
 dev.off()
 
 pdf(file = "~/Documents/GitHub/cl_gitTutorial/data/plot2.pdf")
-plot(1:100)
+plot(1:(100*multiplier_v))
 dev.off()
 
 pdf(file = "~/Documents/GitHub/cl_gitTutorial/data/plot3.pdf")
-plot(1:100, main = "plot 3")
+plot(1:(100*multiplier_v), main = "plot 3")
 dev.off()
