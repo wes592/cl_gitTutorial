@@ -1,12 +1,13 @@
 ### Example Plots
 
-multiplier_v <- 2
+multiplier_v <- 3
+dir_v <- "~/my_tool_repos/cl_gitTutorial/data/"
 
-pdf(file = "~/Documents/GitHub/cl_gitTutorial/data/plot1.pdf")
+pdf(file = file.path(dir_v, "plot1.pdf"))
 plot(1:(10*multiplier_v))
 dev.off()
 
-pdf(file = "~/Documents/GitHub/cl_gitTutorial/data/plot2.pdf")
+pdf(file = file.path(dir_v, "plot2.pdf"))
 plot(1:(100*multiplier_v))
 dev.off()
 
